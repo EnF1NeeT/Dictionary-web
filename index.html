@@ -74,112 +74,122 @@
               type="text"
               class="form-control border-0 bg-transparent"
               placeholder="Search for any word…"
+              id="searchInput"
             />
             <span class="input-group-text border-0 bg-transparent"
-              ><img src="../assets/images/icon-search.svg" alt=""
+              ><img src="./assets/images/icon-search.svg" alt=""
             /></span>
             <div class="valid-feedback">Looks good!</div>
           </div>
         </div>
       </form>
     </div>
-    <!-- Spelling section -->
-    <div class="container py-4">
-      <div class="row">
-        <div class="col-6">
-          <h1>keyboard</h1>
-          <h2 class="text-primary fw-normal lh-base">/ˈkiːbɔːd/</h2>
-        </div>
-        <div class="col-6 d-flex">
-          <button
-            type="button"
-            class="ms-auto my-auto btn btn-bd-primary rounded-circle"
-          >
-            <svg
-              width="75"
-              height="75"
-              viewBox="0 0 75 75"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+    <!-- Word def section -->
+    <section class="d-none" id="explanation">
+      <!-- Spelling section -->
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-6">
+            <h1 id="word-content">keyboard</h1>
+            <h2 id="phonetic-content" class="text-primary fw-normal lh-base">
+              /ˈkiːbɔːd/
+            </h2>
+          </div>
+          <div class="col-6 d-flex">
+            <button
+              type="button"
+              class="ms-auto my-auto btn btn-bd-primary rounded-circle"
             >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M29 27V48L50 37.5L29 27Z"
-                id="svgPath"
-              />
-            </svg>
-          </button>
+              <svg
+                width="75"
+                height="75"
+                viewBox="0 0 75 75"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M29 27V48L50 37.5L29 27Z"
+                  id="svgPath"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Meaning section -->
-    <div class="container">
-      <div class="row">
-        <div class="col-2">
-          <h2 class="fw-bold fst-italic">noun</h2>
+      <!-- Meaning section -->
+      <div class="container" id="meaning-content">
+        <!-- <div class="row">
+          <div class="col-2">
+            <h2 class="fw-bold fst-italic">noun</h2>
+          </div>
+          <div class="col-10">
+            <hr />
+          </div>
         </div>
-        <div class="col-10">
-          <hr />
+        <div class="row py-4">
+          <div class="col-12">
+            <h3 class="text-info-emphasis fw-light">Meaning</h3>
+            <ul class="list-group px-5 py-3">
+              <li>
+                <p class="text-black fw-light">
+                  (etc.) A set of keys used to operate a typewriter, computer
+                  etc.
+                </p>
+              </li>
+              <li>
+                <p class="text-black fw-light">
+                  A component of many instruments including the piano, organ,
+                  and harpsichord consisting of usually black and white keys
+                  that cause different tones to be produced when struck.
+                </p>
+              </li>
+              <li>
+                <p class="text-black fw-light">
+                  A device with keys of a musical keyboard, used to control
+                  electronic sound-producing devices which may be built into or
+                  separate from the keyboard device.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+        <!-- <div class="row py-4">
+          <div class="col-auto">
+            <h3 class="text-info-emphasis fw-light">Synonyms</h3>
+          </div>
+          <div class="col-auto">
+            <h3 class="text-primary fw-semibold">electronic keyboard</h3>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-2">
+            <h2 class="fw-bold fst-italic">verb</h2>
+          </div>
+          <div class="col-10">
+            <hr />
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col-12">
+            <h3 class="text-info-emphasis fw-light">Meaning</h3>
+            <ul class="list-group px-5 py-3">
+              <li>
+                <p class="text-black fw-light">
+                  To type on a computer keyboard.
+                </p>
+                <p class="text-info-emphasis fw-light">
+                  “Keyboarding is the part of this job I hate the most.”
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div> -->
       </div>
-      <div class="row py-4">
-        <div class="col-12">
-          <h3 class="text-info-emphasis fw-light">Meaning</h3>
-          <ul class="list-group px-5 py-3">
-            <li>
-              <p class="text-black fw-light">
-                (etc.) A set of keys used to operate a typewriter, computer etc.
-              </p>
-            </li>
-            <li>
-              <p class="text-black fw-light">
-                A component of many instruments including the piano, organ, and
-                harpsichord consisting of usually black and white keys that
-                cause different tones to be produced when struck.
-              </p>
-            </li>
-            <li>
-              <p class="text-black fw-light">
-                A device with keys of a musical keyboard, used to control
-                electronic sound-producing devices which may be built into or
-                separate from the keyboard device.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row py-4">
-        <div class="col-auto">
-          <h3 class="text-info-emphasis fw-light">Synonyms</h3>
-        </div>
-        <div class="col-auto">
-          <h3 class="text-primary fw-semibold">electronic keyboard</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-2">
-          <h2 class="fw-bold fst-italic">verb</h2>
-        </div>
-        <div class="col-10">
-          <hr />
-        </div>
-      </div>
-      <div class="row py-4">
-        <div class="col-12">
-          <h3 class="text-info-emphasis fw-light">Meaning</h3>
-          <ul class="list-group px-5 py-3">
-            <li>
-              <p class="text-black fw-light">To type on a computer keyboard.</p>
-              <p class="text-info-emphasis fw-light">
-                “Keyboarding is the part of this job I hate the most.”
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <footer class="container border-top border-1 py-2">
+    </section>
+
+    <footer class="container border-top border-1 py-2" id="footer">
       <div class="row">
         <div class="col-1">
           <p class="text-info-emphasis">Sourse</p>
