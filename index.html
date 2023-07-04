@@ -64,6 +64,7 @@
         </ul>
       </div>
     </nav>
+
     <!-- Search section -->
     <div class="container">
       <form class="row g-3 needs-validation" novalidate>
@@ -99,6 +100,7 @@
             <button
               type="button"
               class="ms-auto my-auto btn btn-bd-primary rounded-circle"
+              onclick="playAudio()"
             >
               <svg
                 width="75"
@@ -115,6 +117,13 @@
                 />
               </svg>
             </button>
+            <div id="audio-content" class="d-none"></div>
+            <script>
+              function playAudio() {
+                var audioElement = document.getElementById("audioElement");
+                audioElement.play();
+              }
+            </script>
           </div>
         </div>
       </div>
