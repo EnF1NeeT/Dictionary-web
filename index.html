@@ -116,12 +116,13 @@
         </div>
       </div>
     </nav>
+
     <!-- Search section -->
     <div class="container">
       <form class="row g-3 needs-validation" novalidate>
         <div class="col-12">
           <!-- When focused add border-primary class -->
-          <div class="input-group mb-3 bg-light rounded-4 border">
+          <div class="input-group mb-3 bg-light rounded-4" id="input-group">
             <input
               type="text"
               class="form-control border-0 bg-transparent"
@@ -131,10 +132,29 @@
             <span class="input-group-text border-0 bg-transparent"
               ><img src="./assets/images/icon-search.svg" alt=""
             /></span>
-            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback ms-3" id="invalid-feedback">
+              Whoops, can’t be empty…
+            </div>
           </div>
         </div>
       </form>
+    </div>
+    <div class="container d-none text-center" id="error">
+      <h1>😕</h1>
+      <h2>No Definitions Found</h2>
+      <p>
+        Sorry pal, we couldn't find definitions for the word you were looking
+        for. You can try the search again at later time or head to the web
+        instead.
+      </p>
+    </div>
+    <div class="container text-center" id="greeting">
+      <h1 class="my-2">✍🏻</h1>
+      <h2 class="my-2">Web Dictionary: Discover Definitions Instantly</h2>
+      <p class="my-2">
+        Explore the meanings of words instantly. Type any word and uncover its
+        definition with our online dictionary.
+      </p>
     </div>
     <!-- Word def section -->
     <section class="d-none" id="explanation">
@@ -142,10 +162,11 @@
       <div class="container py-4">
         <div class="row">
           <div class="col-6">
-            <h1 id="word-content">keyboard</h1>
-            <h2 id="phonetic-content" class="text-primary fw-normal lh-base">
-              /ˈkiːbɔːd/
-            </h2>
+            <h1 id="word-content"></h1>
+            <h2
+              id="phonetic-content"
+              class="text-primary fw-normal lh-base"
+            ></h2>
           </div>
           <div class="col-6 d-flex">
             <button
